@@ -49,7 +49,7 @@ Accordion.prototype = {
 		if(!iOS){
 			return this;
 		}
-		this._$content.css('-webkit-transition','all .5s');
+		this._$content.css('-webkit-transition','all ' + milliSecToSec(this._options.duration));
 		// fix iOS flicker bug
 		$('*', this._$content).css('-webkit-transform','translate3d(0,0,0)');
 		return this;
@@ -98,6 +98,13 @@ Accordion.prototype = {
 		return this;
 	}
 };
+
+/**
+ * utils
+ */
+function milliSecToSec(milliSec){
+	return Math.ceil(milliSec/1000 * 100) / 100 + 's';
+}
 
 /**
  * bridge
