@@ -1,0 +1,25 @@
+.mod-all{
+	padding:10px;
+}
+.ui-transitionAccordion{
+	width:280px;
+	padding:0 0 10px;
+}
+	.ui-transitionAccordion-button{
+		display:block;
+		background:#333;
+		color:#fff;
+		margin:0 0 4px;
+		padding:10px;
+	}
+	.ui-transitionAccordion-content{
+	}
+	.js .ui-transitionAccordion-content{
+		height:0;
+		overflow:hidden;
+	}
+		.ui-transitionAccordion-content-inner{
+			background:#333;
+			color:#fff;
+			padding:10px;
+		}
